@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9xO-Fc-GCw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Portfolio View Controller-->
+        <scene sceneID="cCj-yU-eNi">
+            <objects>
+                <viewController id="D8n-oL-PzV" customClass="PortfolioViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rU6-t4-mVt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vTO-Xj-dtB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sas-iY-2iS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1051" y="-611"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="lNe-bD-TP8">
+            <objects>
+                <navigationController id="kUe-YP-VSc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="rQh-kF-c9Z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8jp-gE-Fhv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gz6-SN-oe5" kind="relationship" relationship="rootViewController" id="ZdE-4C-oyu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEG-8j-Iwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="806"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="5PM-hP-bXP">
+            <objects>
+                <viewController id="gz6-SN-oe5" customClass="SettingsViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16d-pR-zAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvF-0h-htW">
+                                <rect key="frame" x="20" y="247" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Base Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaX-No-V8q">
+                                <rect key="frame" x="20" y="276" width="149" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLr-v6-6r3">
+                                <rect key="frame" x="20" y="120" width="71" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TyM-zo-hJx">
+                                <rect key="frame" x="331" y="115" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPl-xo-9Bf">
+                                <rect key="frame" x="20" y="91.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNq-qd-eWG">
+                                <rect key="frame" x="131" y="173" width="152" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log Out"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9BD-jS-jsM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="trailing" secondItem="eaX-No-V8q" secondAttribute="trailing" constant="245" id="0Nz-hu-e5n"/>
+                            <constraint firstItem="fvF-0h-htW" firstAttribute="top" secondItem="cNq-qd-eWG" secondAttribute="bottom" constant="43" id="9Wy-h5-MPJ"/>
+                            <constraint firstItem="oPl-xo-9Bf" firstAttribute="top" secondItem="9BD-jS-jsM" secondAttribute="top" constant="3.5" id="CDs-Fa-ZE1"/>
+                            <constraint firstItem="NLr-v6-6r3" firstAttribute="leading" secondItem="9BD-jS-jsM" secondAttribute="leading" constant="20" id="FNX-Xe-zEh"/>
+                            <constraint firstItem="TyM-zo-hJx" firstAttribute="leading" secondItem="NLr-v6-6r3" secondAttribute="trailing" constant="240" id="G4a-En-yUn"/>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="trailing" secondItem="TyM-zo-hJx" secondAttribute="trailing" constant="34" id="KOt-qa-pDI"/>
+                            <constraint firstItem="fvF-0h-htW" firstAttribute="top" secondItem="NLr-v6-6r3" secondAttribute="bottom" constant="110" id="O3R-Nm-aeV"/>
+                            <constraint firstItem="TyM-zo-hJx" firstAttribute="leading" secondItem="NLr-v6-6r3" secondAttribute="trailing" constant="240" id="OA5-YP-cir"/>
+                            <constraint firstItem="fvF-0h-htW" firstAttribute="leading" secondItem="9BD-jS-jsM" secondAttribute="leading" constant="20" id="R5q-ZN-OTE"/>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="bottom" secondItem="eaX-No-V8q" secondAttribute="bottom" constant="520" id="ZYf-s5-2El"/>
+                            <constraint firstItem="cNq-qd-eWG" firstAttribute="leading" secondItem="9BD-jS-jsM" secondAttribute="leading" constant="131" id="a2s-rp-NhU"/>
+                            <constraint firstItem="eaX-No-V8q" firstAttribute="top" secondItem="fvF-0h-htW" secondAttribute="bottom" constant="8" symbolic="YES" id="aQM-Ez-5XX"/>
+                            <constraint firstItem="TyM-zo-hJx" firstAttribute="top" secondItem="oPl-xo-9Bf" secondAttribute="bottom" constant="3" id="avR-BU-3He"/>
+                            <constraint firstItem="eaX-No-V8q" firstAttribute="leading" secondItem="9BD-jS-jsM" secondAttribute="leading" constant="20" id="dQh-rP-lSZ"/>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="trailing" secondItem="fvF-0h-htW" secondAttribute="trailing" constant="20" id="j9A-G9-fk6"/>
+                            <constraint firstItem="TyM-zo-hJx" firstAttribute="top" secondItem="oPl-xo-9Bf" secondAttribute="bottom" constant="3" id="mAo-7w-D5u"/>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="trailing" secondItem="cNq-qd-eWG" secondAttribute="trailing" constant="131" id="qJ9-x7-lPB"/>
+                            <constraint firstItem="cNq-qd-eWG" firstAttribute="top" secondItem="oPl-xo-9Bf" secondAttribute="bottom" constant="61" id="raE-pP-wra"/>
+                            <constraint firstItem="9BD-jS-jsM" firstAttribute="trailing" secondItem="oPl-xo-9Bf" secondAttribute="trailing" constant="20" id="sCp-Hh-MqG"/>
+                            <constraint firstItem="fvF-0h-htW" firstAttribute="top" secondItem="TyM-zo-hJx" secondAttribute="bottom" constant="101" id="teB-yh-PV9"/>
+                            <constraint firstItem="oPl-xo-9Bf" firstAttribute="leading" secondItem="9BD-jS-jsM" secondAttribute="leading" constant="20" id="xjb-3M-xYw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="wvo-u5-ktw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npV-5H-TUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3215.9420289855075" y="805.58035714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kzz-rg-ai9">
+            <objects>
+                <tabBarController id="9xO-Fc-GCw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="20l-tA-w2k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jRe-aF-VFI" kind="relationship" relationship="viewControllers" id="OT8-fd-rcB"/>
+                        <segue destination="wnj-jQ-fRJ" kind="relationship" relationship="viewControllers" id="iYt-Xu-c8a"/>
+                        <segue destination="kUe-YP-VSc" kind="relationship" relationship="viewControllers" id="RNo-fE-mfZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv4-Qa-hi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="76"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="tXT-26-AIa">
+            <objects>
+                <navigationController id="jRe-aF-VFI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="dollarsign.circle" catalog="system" id="cYb-A1-Nae"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dho-5G-cbj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QSy-9z-ai8" kind="relationship" relationship="rootViewController" id="sRS-lB-Rq6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQH-Fe-10l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="-652"/>
+        </scene>
+        <!--Portfolio View Controller-->
+        <scene sceneID="inn-SI-Lkj">
+            <objects>
+                <viewController id="QSy-9z-ai8" customClass="PortfolioViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4bY-hu-86A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wax-K1-YQa">
+                                <rect key="frame" x="-0.5" y="44" width="415" height="247"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPa-W9-Tnb">
+                                        <rect key="frame" x="117" y="52" width="181" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00 USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6V-n1-Rhb">
+                                        <rect key="frame" x="138.5" y="96" width="138.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="3fp-JW-CNs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xym-pc-bTZ">
+                                        <rect key="frame" x="117.5" y="187" width="181.5" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Crypto"/>
+                                        <connections>
+                                            <segue destination="CeP-kZ-fqW" kind="show" id="uMS-n1-8rY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xym-pc-bTZ" secondAttribute="bottom" constant="29" id="4Wu-6e-nQG"/>
+                                    <constraint firstItem="B6V-n1-Rhb" firstAttribute="centerX" secondItem="wax-K1-YQa" secondAttribute="centerX" id="Bax-O8-keB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xym-pc-bTZ" secondAttribute="trailing" constant="116" id="GUF-tP-WI2"/>
+                                    <constraint firstItem="B6V-n1-Rhb" firstAttribute="centerX" secondItem="LPa-W9-Tnb" secondAttribute="centerX" id="HO7-1j-cnh"/>
+                                    <constraint firstItem="B6V-n1-Rhb" firstAttribute="top" secondItem="wax-K1-YQa" secondAttribute="top" constant="96" id="hpT-hn-Ft1"/>
+                                    <constraint firstItem="Xym-pc-bTZ" firstAttribute="leading" secondItem="wax-K1-YQa" secondAttribute="leading" constant="117" id="m89-lp-cGY"/>
+                                    <constraint firstItem="B6V-n1-Rhb" firstAttribute="leading" secondItem="wax-K1-YQa" secondAttribute="leading" constant="138" id="v35-y2-jEH"/>
+                                    <constraint firstItem="B6V-n1-Rhb" firstAttribute="top" secondItem="LPa-W9-Tnb" secondAttribute="bottom" constant="8" id="xzu-54-vLw"/>
+                                    <constraint firstItem="Xym-pc-bTZ" firstAttribute="top" secondItem="B6V-n1-Rhb" secondAttribute="bottom" constant="70" id="y5j-8o-8Q8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qE7-y0-O70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qE7-y0-O70" firstAttribute="bottom" secondItem="wax-K1-YQa" secondAttribute="bottom" constant="522" id="JdI-X7-iIR"/>
+                            <constraint firstItem="wax-K1-YQa" firstAttribute="top" secondItem="4bY-hu-86A" secondAttribute="topMargin" constant="-44" id="reC-Bb-TKQ"/>
+                            <constraint firstItem="wax-K1-YQa" firstAttribute="centerX" secondItem="4bY-hu-86A" secondAttribute="centerX" id="tby-ap-J83"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="enE-8B-BiC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1q3-g6-tOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3215.9420289855075" y="-652.23214285714278"/>
+        </scene>
+        <!--Asset Detail View Controller-->
+        <scene sceneID="D0F-VP-JwC">
+            <objects>
+                <viewController id="CeP-kZ-fqW" customClass="AssetDetailViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e59-Hr-Wv2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill out the form to add a crypto to your portfoilo." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R18-VK-mQF">
+                                <rect key="frame" x="15" y="108" width="385" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPK-7X-WRI">
+                                <rect key="frame" x="41" y="232" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Purchased" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYe-MZ-TTI">
+                                <rect key="frame" x="41" y="290" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3t-cO-6b4">
+                                <rect key="frame" x="132" y="433" width="150" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="didTapSave:" destination="CeP-kZ-fqW" eventType="touchUpInside" id="Bck-oT-jOE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-9k-xRy">
+                                <rect key="frame" x="210" y="232" width="184" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.000000000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-PK-OTf">
+                                <rect key="frame" x="210" y="283" width="184" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price per Crypto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SC-wj-zoA">
+                                <rect key="frame" x="41" y="350" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$1.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7H-zj-m91">
+                                <rect key="frame" x="210" y="338" width="184" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Veh-mG-of2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1SC-wj-zoA" firstAttribute="top" secondItem="gYe-MZ-TTI" secondAttribute="bottom" constant="39" id="5Sh-MI-ke4"/>
+                            <constraint firstItem="1SC-wj-zoA" firstAttribute="top" secondItem="gYe-MZ-TTI" secondAttribute="bottom" constant="39" id="6cp-Ch-CZd"/>
+                            <constraint firstItem="p3t-cO-6b4" firstAttribute="top" secondItem="1SC-wj-zoA" secondAttribute="bottom" constant="62" id="6vQ-l6-HXi"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="R18-VK-mQF" secondAttribute="trailing" constant="14" id="89y-sj-ink"/>
+                            <constraint firstItem="Pxm-PK-OTf" firstAttribute="top" secondItem="RK0-9k-xRy" secondAttribute="bottom" constant="17" id="9PZ-70-AhZ"/>
+                            <constraint firstItem="gYe-MZ-TTI" firstAttribute="leading" secondItem="Veh-mG-of2" secondAttribute="leading" constant="41" id="D3z-Za-Fm2"/>
+                            <constraint firstItem="Y7H-zj-m91" firstAttribute="leading" secondItem="1SC-wj-zoA" secondAttribute="trailing" constant="44" id="Fi8-40-Dgb"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="bottom" secondItem="p3t-cO-6b4" secondAttribute="bottom" constant="349" id="HUe-cY-9cI"/>
+                            <constraint firstItem="Y7H-zj-m91" firstAttribute="top" secondItem="Pxm-PK-OTf" secondAttribute="bottom" constant="21" id="L2Z-ug-8nw"/>
+                            <constraint firstItem="R18-VK-mQF" firstAttribute="leading" secondItem="Veh-mG-of2" secondAttribute="leading" constant="15" id="QSQ-Rq-lSP"/>
+                            <constraint firstItem="1SC-wj-zoA" firstAttribute="leading" secondItem="Veh-mG-of2" secondAttribute="leading" constant="41" id="TtR-K6-Leg"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="Y7H-zj-m91" secondAttribute="trailing" constant="20" id="Wey-ia-ThE"/>
+                            <constraint firstItem="Y7H-zj-m91" firstAttribute="top" secondItem="Pxm-PK-OTf" secondAttribute="bottom" constant="21" id="Wjb-r3-evG"/>
+                            <constraint firstItem="p3t-cO-6b4" firstAttribute="top" secondItem="1SC-wj-zoA" secondAttribute="bottom" constant="62" id="bW4-9o-BT3"/>
+                            <constraint firstItem="RK0-9k-xRy" firstAttribute="leading" secondItem="mPK-7X-WRI" secondAttribute="trailing" constant="68" id="cUk-pJ-nlO"/>
+                            <constraint firstItem="Pxm-PK-OTf" firstAttribute="top" secondItem="RK0-9k-xRy" secondAttribute="bottom" constant="17" id="ciS-Xk-mCI"/>
+                            <constraint firstItem="Y7H-zj-m91" firstAttribute="leading" secondItem="1SC-wj-zoA" secondAttribute="trailing" constant="44" id="dCG-S9-g1i"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="RK0-9k-xRy" secondAttribute="trailing" constant="20" id="erM-bY-QHc"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="1SC-wj-zoA" secondAttribute="trailing" constant="248" id="fLT-iX-BUe"/>
+                            <constraint firstItem="p3t-cO-6b4" firstAttribute="leading" secondItem="Veh-mG-of2" secondAttribute="leading" constant="132" id="g1Y-pg-I8j"/>
+                            <constraint firstItem="RK0-9k-xRy" firstAttribute="top" secondItem="R18-VK-mQF" secondAttribute="bottom" constant="103" id="g8V-3Y-1vW"/>
+                            <constraint firstItem="R18-VK-mQF" firstAttribute="top" secondItem="Veh-mG-of2" secondAttribute="top" constant="20" id="h9a-FY-z5g"/>
+                            <constraint firstItem="mPK-7X-WRI" firstAttribute="leading" secondItem="Veh-mG-of2" secondAttribute="leading" constant="41" id="ifA-0C-vku"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="Pxm-PK-OTf" secondAttribute="trailing" constant="20" id="lNg-Ls-gVG"/>
+                            <constraint firstItem="p3t-cO-6b4" firstAttribute="top" secondItem="Y7H-zj-m91" secondAttribute="bottom" constant="61" id="mS6-Im-ye9"/>
+                            <constraint firstItem="mPK-7X-WRI" firstAttribute="top" secondItem="R18-VK-mQF" secondAttribute="bottom" constant="103" id="oAi-NJ-mT3"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="trailing" secondItem="p3t-cO-6b4" secondAttribute="trailing" constant="132" id="rcN-Ef-iZl"/>
+                            <constraint firstItem="gYe-MZ-TTI" firstAttribute="top" secondItem="mPK-7X-WRI" secondAttribute="bottom" constant="37" id="sdP-Q9-o5a"/>
+                            <constraint firstItem="Pxm-PK-OTf" firstAttribute="leading" secondItem="gYe-MZ-TTI" secondAttribute="trailing" constant="23" id="uRg-a9-z4q"/>
+                            <constraint firstItem="Veh-mG-of2" firstAttribute="bottom" secondItem="R18-VK-mQF" secondAttribute="bottom" constant="684" id="vF2-XG-BXB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="13E-9f-j2E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mF-4e-va5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4257.971014492754" y="-652.23214285714278"/>
+        </scene>
+        <!--Track-->
+        <scene sceneID="iPL-2b-aoe">
+            <objects>
+                <navigationController id="wnj-jQ-fRJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Track" image="chart.xyaxis.line" catalog="system" id="ShY-LQ-jZF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5n0-z8-tQ3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FFS-q4-rci" kind="relationship" relationship="rootViewController" id="H0d-Hk-Rie"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feH-mD-3c2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="76"/>
+        </scene>
+        <!--Crypto Market-->
+        <scene sceneID="UB3-aL-ObY">
+            <objects>
+                <viewController id="FFS-q4-rci" customClass="TrackViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9kP-rE-UEa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gvE-OG-r0Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto Market" id="m0o-vD-7Oh">
+                        <barButtonItem key="rightBarButtonItem" title="Search" image="magnifyingglass" catalog="system" id="9od-J8-Rsx">
+                            <connections>
+                                <segue destination="x2M-DY-Y59" kind="show" id="tbs-y1-i6R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="JBC-bQ-z0d" kind="presentation" id="sIz-Ee-933"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvB-YH-fbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3216" y="76"/>
+        </scene>
+        <!--Search Crypto View Controller-->
+        <scene sceneID="OBu-Rx-OWN">
+            <objects>
+                <viewController id="x2M-DY-Y59" customClass="SearchCryptoViewController" customModule="Crypto_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="88i-2i-as9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for a Crypto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-3d-yTc">
+                                <rect key="frame" x="20" y="88" width="238" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Crypto Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dn-qY-EiC">
+                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fEC-yh-gV1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="upR-Hp-pXL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFt-1t-50n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4257.971014492754" y="75.669642857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WCq-Hl-Vtf">
+            <objects>
+                <viewController id="JBC-bQ-z0d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WR3-al-Knu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mac-3b-jod"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqF-Fl-a1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4258" y="806"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
